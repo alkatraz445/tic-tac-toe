@@ -1,8 +1,8 @@
 const Square = (props) => {
   return (
-    <button className="square" onClick={props.onClick}>
+    <div className="square flex" onClick={props.onClick}>
       {props.value}
-    </button>
+    </div>
   );
 };
 

@@ -1,5 +1,7 @@
 import React from "react";
 import Board from "./board";
+import Title from "./title";
+import Footer from "./footer";
 class Game extends React.Component {
   constructor(props) {
     super(props);
@@ -58,17 +60,21 @@ class Game extends React.Component {
     }
 
     return (
-      <div className="game flex">
-        <div className="game-board">
-          <Board
-            squares={current.squares}
-            onClick={(i) => this.handleClick(i)}
-          />
+      <div className="wrapper flex">
+        <Title />
+        <div className="game flex">
+          <div className="game-board">
+            <Board
+              squares={current.squares}
+              onClick={(i) => this.handleClick(i)}
+            />
+          </div>
+          <div className="game-info">
+            <div className="status">{status}</div>
+            <ol>{moves}</ol>
+          </div>
         </div>
-        <div className="game-info">
-          <div>{status}</div>
-          <ol>{moves}</ol>
-        </div>
+        <Footer />
       </div>
     );
   }
