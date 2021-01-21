@@ -1,0 +1,21 @@
+@media screen and (max-width: 768px) {
+  .game {
+    height: 70vh;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .game-info {
+    right: 50%;
+    top: 50%;
+  }
+
+  .title {
+    width: 80%;
+    font-size: 16pt;
+  }
+
+  .square {
+    width: 75px;
+    height: 75px;
+  }
+}
