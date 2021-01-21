@@ -1,6 +1,8 @@
 const Square = (props) => {
+  const winStyle =
+    "square" + " " + (props.highlight ? "highlight" : " ") + " " + "flex";
   return (
-    <div className="square flex" onClick={props.onClick}>
+    <div className={winStyle} onClick={props.onClick}>
       {props.value}
     </div>
   );

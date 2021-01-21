@@ -105,6 +105,12 @@ body {
 .square:nth-of-type(3) {
   border-left: 3px solid var(--textColor);
 }
+
+.square.highlight {
+  background-color: var(--textColor);
+  color: var(--backgroundColor);
+}
+
 .square:hover {
   background-color: var(--textColor);
   color: var(--backgroundColor);
@@ -174,6 +180,10 @@ ol button:hover {
   display: inline-block;
   width: 100%;
   text-align: center;
+  background-color: var(--textColor);
+  color: var(--backgroundColor);
+  padding: 5pt;
+  border-radius: 3px;
 }
 
 /* Footer */
