@@ -35,7 +35,6 @@ body {
 /* Title */
 
 .title {
-  margin: 0;
   text-align: center;
   background-color: var(--textColor);
   color: var(--backgroundColor);
@@ -152,8 +151,8 @@ body {
 
 ol,
 ul {
-  padding-left: 30px;
-  top: 0%;
+  padding-left: 0;
+  list-style-type: none;
 }
 
 ol button {
@@ -188,4 +187,19 @@ ol button:hover {
 
 .github-link {
   color: #61dbfb;
+}
+
+.github-link:after {
+  bottom: 0;
+  content: "";
+  height: 3px;
+  left: 0;
+  position: absolute;
+  background-color: #61dbfb;
+  transition: width 0.2s ease 0s;
+  width: 0;
+}
+
+.github-link:hover:after {
+  width: 100%;
 }
