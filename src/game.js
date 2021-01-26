@@ -75,7 +75,7 @@ class Game extends React.Component {
               winLine={winInfo.line}
             />
           </div>
-          <div className="game-info">
+          <div className="game-info flex">
             <div className="status">{status}</div>
             <ol>{moves}</ol>
           </div>
